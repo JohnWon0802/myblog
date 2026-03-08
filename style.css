@@ -202,8 +202,8 @@ body {
 .project-card {
     display: flex;
     align-items: stretch;
-    margin-top: 60px;
-    gap: 60px;
+    margin-top: clamp(32px, 8vw, 150px);
+    gap: clamp(32px, 8vw, 150px);
     justify-content: space-between;
 }
 
@@ -267,7 +267,10 @@ body {
     align-items: center;
     gap: clamp(20px, 2vw, 40px);
 }
-
+.contact-icons img {
+    width: clamp(15px, 4vw, 50px);
+    height: clamp(15px, 4vw, 50px);
+}
 /*Rounded Corners*/
 .rounded-image {
     border-radius: 24px;
